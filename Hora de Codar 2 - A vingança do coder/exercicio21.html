@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> exercicio 21 </title>
+    <script>
+
+        var nota1 = parseFloat(prompt("Informe sua nota da primeira avaliação:"));
+        var nota2 = parseFloat(prompt("Informe sua nota da segunda avaliação:"));
+        var notaopt = parseFloat(prompt("Informe sua nota da avaliação optativa:"));
+
+        if (notaopt > nota1) {
+            var media = (notaopt + nota2)/2;
+        } else if (notaopt > nota2) {
+            var media = (notaopt + nota1)/2;
+        } else {
+            var media = (nota1 + nota2)/2;
+        }
+
+        if (media >= 6) {
+            alert("Aprovado com a média de: " + media);
+        } else if(media < 3) {
+            alert("Reprovado com a média de: " + media);
+        } else {
+            alert("Exame de recuperação com a média de: " + media);
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

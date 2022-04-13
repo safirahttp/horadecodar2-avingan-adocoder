@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> exercicio 22 </title>
+    <script>
+
+        var parcela = parseFloat(prompt("Informe quantas parcelas deseja (Em até 15 vezes se juros!!!)"));
+        var capacete = 18.230;
+
+        if (parcela < 16) {
+            var final = 18.230 / parcela;
+        } else {
+            var juros = 13/100;
+            var final = (18.230 / parcela) + juros;
+        }
+        alert("O valor final da sua parcela é de: " + final.toFixed(3) + " em " + parcela + "x");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

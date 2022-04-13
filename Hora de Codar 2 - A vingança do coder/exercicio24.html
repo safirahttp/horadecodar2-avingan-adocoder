@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> exercicio 24 </title>
+    <script>
+        
+        var javali1 = parseInt(prompt("Informe a Idade do 1° Javali: "));
+        var javali2 = parseInt(prompt("Informe a Idade do 2° Javali: "));
+        var girafa1 = parseInt(prompt("Informe a Idade da 1° Girafa: "));
+        var girafa2 = parseInt(prompt("Informe a Idade do 2° Girafa: "));
+        var javalimaior = 0;
+        var javalimenor = 0;
+        var girafamaior = 0;
+        var girafamenor = 0;
+
+        if (javali1 > javali2) {
+            javalimaior = javali1;
+            javalimenor = javali2;
+        } else {
+            javalimaior= javali2;
+            javalimenor = javali1;
+        }
+
+        if (girafa1 < girafa2) {
+            girafamenor = girafa1;
+            girafamaior = girafa2;
+        } else {
+            girafamenor= girafa2;
+            girafamaior = girafa1;
+        }
+        alert("A soma da idade do javali mais velho com a girafa mais nova é: " + (javalimaior + girafamenor) + "." + "\nA soma da idade do javali mais novo com a girafa mais velha é: " + (javalimenor * girafamaior) + ".");
+
+       
+        
+
+    </script>
+</head>
+<body>
+        
+</body>
+</html>

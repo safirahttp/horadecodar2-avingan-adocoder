@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> exercicio 20 </title>
+    <script>
+
+        var lados = parseFloat(prompt("Informe os lados do seu polígono:"));
+
+        if (lados == 3) {
+            var cm = parseFloat(prompt("Informe a medida do lado:"));
+            var perimetro = 3 * cm;
+            alert("Seu polígono é um TRIÂGULO e seu perímetro é de: " + perimetro);
+        } else if (lados == 4) {
+            var cm = parseFloat(prompt("Informe a medida do lado:"));
+            var perimetro = 4 * cm;
+            alert("Seu polígono é um QUADRADO  e seu perímetro é de: " + perimetro);
+        } else if (lados == 5) {
+            var cm = parseFloat(prompt("Informe a medida do lado:"));
+            var perimetro = 5 * cm;
+            alert("Seu polígono é um PENTÁGONO  e seu perímetro é de: " + perimetro);
+        } else if (lados < 3) {
+            alert("NÃO É UM POLÍGONO");
+        } else {
+            alert("POLÍGONO NÃO IDENTIFICADO");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

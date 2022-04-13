@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> exercicio 10 </title>
+    <script>
+        var nt1 = parseFloat(prompt("Digite sua nota:"));
+        var nt2 = parseFloat(prompt("Digite sua segunda nota:"));
+        var nt3 = parseFloat(prompt("Digite sua terceira nota:"));
+        var nt4 = parseFloat(prompt("Digite sua quarta nota:"));
+
+        if ((nt1 >= 0 && nt1 <= 10)&&(nt2 >= 0 && nt2 <= 10)&&(nt3 >= 0 && nt3 <= 10)&&(nt4 >= 0 && nt4 <= 10)) {
+            var media = parseFloat(nt1 + nt2 + nt3 + nt4)/4;
+        } else {
+            alert("Suas notas tem que ser valores de 0 a 10.");
+        }
+        if (media > 5) {
+            alert("Sua nota foi "+ media +". Você passou no teste!");
+        }
+        else {
+            alert("Tente Novamente.");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
